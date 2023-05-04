@@ -10,5 +10,5 @@
 
 - The parameter number of this model is 6x smaller than the Alexnet model and much smaller than the VGG model. Especially, it outperforms these models...
 
-For more information, please refer to the  <a href= "https://github.com/makhmudjumanazarov/Residual-Network-Architectures-ResNet34-and-ResNet50/blob/main/ResNet.ipynb">link below</a>,
+For more information, please refer to the  <a href= "https://github.com/makhmudjumanazarov/Inception-V1-GoogleNet-Architecture-via-Tensorflow/blob/main/Inception%20V1.ipynb">link below</a>,
 
