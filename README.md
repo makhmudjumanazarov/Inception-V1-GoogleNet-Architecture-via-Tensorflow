@@ -1,4 +1,4 @@
-# Building InceptionV1(GoogLeNet) model using Tensorflow(TF) from scratch
+## Building InceptionV1(GoogLeNet) model using Tensorflow(TF) from scratch
 
 ### Building an InceptionV1(GoogLeNet)
 
