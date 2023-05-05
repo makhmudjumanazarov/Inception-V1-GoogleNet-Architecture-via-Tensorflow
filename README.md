@@ -1,22 +1,17 @@
-# Building ResNet34 and ResNet50 models using Tensorflow(TF) from scratch
+# Building InceptionV1(GoogLeNet) model using Tensorflow(TF) from scratch
 
-### Building a Residual Network
+### Building an InceptionV1(GoogLeNet)
 
-Residual networks solve degradation problem by shortcuts or skip connections, by short circuiting shallow layers to deep layers. We can stack Residual blocks more and more, without degradation in performance. This enables very deep networks to be built.
+- InceptionV1(GoogLeNet) is a deep convolutional neural network that was proposed by Szegedy et al. This network won the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC-2014) where 92.3% classification performance was achieved. In particular, this model was designed in a special architecture that allows for increasing the depth and width of the network but keeping the computing resource.
 
-In ResNets, a "shortcut" or a "skip connection" allows the model to skip layers: A ResNet block showing a skip-connection image
+- The VGG model has in total 22 layers and it is composed of 9 Inception blocks. 
 
+- Although the InceptionV1(GoogLeNet) is complicated to implement, the parameter number of the whole model is not large. The Dense layers always take a majority of parameters. Besides, the appearance of the global average pooling layers helps to reduce significantly the parameter number, thus reducing the computational complexity of the model.
 
-<img src="/Images/skip_connection_kiank.png" alt="Plant Village" style="display: block; margin: 0 auto; max-width: 100%;">
+- The parameter number of this model is 6x smaller than the Alexnet model and much smaller than the VGG model. Especially, it outperforms these models.
 
+#### GoogLeNet network with all the bells and whistles
+![GoogLeNet](/images/Inception_V1(GoogleNet).png)
 
-The image on the left shows the "main path" through the network. The image on the right adds a shortcut to the main path. By stacking these ResNet blocks on top of each other, you can form a very deep network. 
-
-The lecture mentioned that having ResNet blocks with the shortcut also makes it very easy for one of the blocks to learn an identity function. This means that you can stack on additional ResNet blocks with little risk of harming training set performance.  
-    
-On that note, there is also some evidence that the ease of learning an identity function accounts for ResNets' remarkable performance even more than skip connections help with vanishing gradients.
-
-Two main types of blocks are used in a ResNet, depending mainly on whether the input/output dimensions are the same or different. You are going to implement both of them: the "identity block" and the "convolutional block."
-
-For more information, please refer to the  <a href= "https://github.com/makhmudjumanazarov/Residual-Network-Architectures-ResNet34-and-ResNet50/blob/main/ResNet.ipynb">link below</a>,
+I am trying to build this architecture of the GoogLeNet via tensorflow framework from scratch. More at the <a href= "https://github.com/makhmudjumanazarov/Inception-V1-GoogleNet-Architecture-via-Tensorflow/blob/main/Inception%20V1.ipynb">link below</a>...
 
